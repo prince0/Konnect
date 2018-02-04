@@ -3,6 +3,7 @@ package com.example.rohan.helloworld;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
@@ -43,11 +44,7 @@ public class Main2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         sharedPreferences = this.getSharedPreferences("values",Context.MODE_PRIVATE);
         ButterKnife.bind(this);
-//        volleyTest("I am himanshu","hin");
     }
-
-
-
 
 
     @OnClick(R.id.submitButton)
@@ -64,11 +61,4 @@ public class Main2Activity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    @OnClick(R.id.langText)
-    public void chooseLang()
-    {
-        Intent intent = new Intent(this,ChooseLangActivity.class);
-        startActivity(intent);
-        Toast.makeText(Main2Activity.this,"Yolo",Toast.LENGTH_LONG).show();
-    }
 }

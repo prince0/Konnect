@@ -37,7 +37,10 @@ public class ChooseLangActivity extends AppCompatActivity {
                     {
                         String lang = String.valueOf(adapterView.getItemAtPosition(i));
                         SharedPreferences sharedPreferences = getApplication().getSharedPreferences("values", Context.MODE_PRIVATE);
-                        Toast.makeText(ChooseLangActivity.this,lang,Toast.LENGTH_LONG).show();
+                        SharedPreferences.Editor editor = sharedPreferences.edit();
+                        editor.putString("ln",lang);
+                        editor.commit();
+                        //Toast.makeText(ChooseLangActivity.this,lang,Toast.LENGTH_LONG).show();
                         finish();
                     }
                 }
