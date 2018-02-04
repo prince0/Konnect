@@ -5,13 +5,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.konnect.konnect.MainActivity">
+    tools:context="com.example.rohan.helloworld.ChooseLangActivity">
 
-    <Button
-        android:id="@+id/chatButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ListView
+        android:id="@+id/langListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text=" Chat Button" />
+        android:layout_centerVertical="true" />
 </RelativeLayout>
