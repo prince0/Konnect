@@ -1,5 +1,5 @@
-#Konnect
-Where language is no barrier!
+# Konnect
+#### Where language is no barrier!
 
 ## Inspiration
 Inability to get involved and network with fellow students from the different countries due to language barrier motivated us to make an application which takes care of that. Now, you can be a part of their group while and while everyone is talking, you can have it in your chosen language.
